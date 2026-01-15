@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practice</title>
+        <style>
+            body{
+                height: 200vh;
+                margin: 0%;
+            }
+                        /**/
+            .griffin{
+                background-color: #d3958c;
+                width: 500px;
+                height: auto;
+                margin: auto;
+                color: #511b18;
+                font-size: 18px; 
+            }
+    /*---------------------------START BOX1-----------METHOD1----------------------*/
+            .box1{                   /*made a container to store various details of griffons div but side by side horizontallty*/
+                width: 100%;
+                overflow: auto;
+            }
+            .box1 div{
+                width: 33%;
+                height: 300px;
+                float: left;
+            }
+    /*---------------------------FINISH BOX1---------------------------------*/
+
+
+    /*---------------------------START BOX2----------------METHOD2-----------------*/
+            .box2{                   /*made a container to store various details of griffons div but side by side horizontallty*/
+                width: 100%;
+
+            }
+            .box2 div{
+                width: 33%;
+                height: 300px;
+                vertical-align: top;
+                display: inline-block;
+            }
+    /*---------------------------FINISH BOX2---------------------------------*/
+
+        /*---------------------------START BOX3---------------------------------*/
+            .box4{
+                width: 100%;
+            }
+
+            .box3 {
+                display: flex;
+
+            }        
+            .box3 div {
+                width: 33%;
+                height: 300px;
+            }
+
+        /*---------------------------FINISH BOX3---------------------------------*/
+
+        
+        /*---------------------------START IMAGE BOX---------------------------------*/
+            .design {
+                text-align: center;
+            }
+            .design img{    
+                width: 50%;
+                height: auto;
+                border: 5px solid #02012a;
+            }
+        /*---------------------------FINISH IMAGE BOX---------------------------------*/
+
+
+
+        /*---------------------------MOBILE RESPONSE---------------------------------*/
+        @media (max-width: 768px) {
+            .griffin{                                  /*------------FIRST-------------------*/
+                width: 90%;
+                font-size: 12px;    
+            }
+
+            .box1 div{
+                height: 100px;
+            }
+
+            .box1 p{
+                font-size: 15px;
+            }
+
+            .box2 div{
+                height: 100px;
+            }
+
+            .box2 p{
+                font-size: 15px;
+            }
+
+            .box3 div{
+                height: 100px;
+            }
+
+            .box3 p{
+                font-size: 15px;
+            }
+            
+        }            
+        </style>
+    </head>
+    <body>
+        <!--DIV AS CONTAINER-->
+        <div style=" color: #0a3323; background-color: #c4e77e;">
+            <h1 style="text-align: center;">DIV</h1>
+            <h3>1. Div as CONTAINER</h3>
+            <p style="font-size: 20px;">The 'div' element is by default a block element, meaning that it takes all available width, 
+                and comes with line breaks before and after.</p>
+            <p style="font-size: 20px;">Here 'div' is used as a container .</p><br>
+        </div>
+
+        <!--DIV Aligning-->
+        <div class="griffin">
+            <h3 style="text-align: center;">2. GRIFFIN</h3>
+            <p style="padding-left: 10px;">Mythical creatures with the body of a lion and head and wings of an eagle.<br>
+                They symbolize strength, courage, and wisdom and are known as guardians of treasures and sacred places.</p>
+            <footer>NOTE: If you have a 'div' element that is not 100% wide, and you want to center-align it, set the CSS margin property 
+                to auto.</footer>
+        </div>
+
+        <br>
+        <hr style="height: 10px; background-color: #330a0a;">
+        <br>
+        <div class="design">
+            <img src="griffon.jpg">
+        </div>
+        <!--DIV Aligning them horizontally side by side---------------METHOD1--->
+        <div class="box1">
+            <h1>METHOD 1: Aligning DIV horizontally side by side</h1>
+            <div style="font-size: 25px; background-color:#c63e4e; color: wheat;">
+                <h3 style="text-align: center;">Origins & History</h3>
+                <ul>
+                    <li>Ancient Persia & Mesopotamia: Early depictions guarding gold and treasures</li>
+                    <li>Greek mythology: Sacred to Apollo, associated with the sun and divine power</li>
+                    <li>Medieval Europe: Common in coats of arms and architecture as a symbol of protection</li>
+                </ul>
+            </div>
+            
+            <div style="font-size: 25px; background-color:#ecdab3; color: #3d230a;">
+                <h3 style="text-align: center;">Symbolism</h3>
+                <p style="text-align: center;">Since the eagle is the king of the sky and the lion is the king of the land,
+                 the griffin symbolizes power over both air and earth.<br>They are often shown as guardians of gold, 
+                 temples, or royal property</p>
+            </div>
+
+            <div style="font-size: 25px; background-color:#b3ecb4; color: #0a3323;">
+                <h3 style="text-align: center;">In Modern Culture</h3>
+                <ol>Griffins appear in:
+                    <li>Fantasy books & movies (e.g., Harry Potter, The Witcher)</li> 
+                    <li>Video games (Dungeons & Dragons)</li>
+                    <li>Logos, emblems, and fantasy art.</li>
+                </ol>
+            </div>
+            <footer>NOTE: The CSS float property was not originally meant to align 'div' elements side-by-side, but has been used 
+                    for this purpose for many years.<br> CSS float property is used for positioning and formatting content 
+                    and allows elements to be positioned horizontally, rather than vertically.</footer>
+        </div>
+
+        <br>
+        <hr style="height: 10px; background-color: #330a0a;">
+        <br>
+        <div class="design">
+            <img src="2.jpg">
+        </div>
+        <!--DIV Aligning them horizontally side by side-------------------------METHOD2----->
+        <div class="box2">
+            <h1>METHOD 2: Aligning DIV horizontally side by side</h1>
+            <div style="font-size: 25px; background-color:#d5de88; color: rgb(143, 93, 1);">
+                <h3 style="text-align: center;">Origins & History</h3>
+                <ul>
+                    <li>Ancient Persia & Mesopotamia: Early depictions guarding gold and treasures</li>
+                    <li>Greek mythology: Sacred to Apollo, associated with the sun and divine power</li>
+                    <li>Medieval Europe: Common in coats of arms and architecture as a symbol of protection</li>
+                </ul>
+            </div>
+
+            <div style="font-size: 25px; background-color:#ecb3b3; color: #3d230a;">
+                <h3 style="text-align: center;">Symbolism</h3>
+                <p style="text-align: center;">Since the eagle is the king of the sky and the lion is the king of the land,
+                     the griffin symbolizes power over both air and earth.<br>They are often shown as guardians of gold, 
+                     temples, or royal property</p>
+            </div>
+
+            <div style="font-size: 25px; background-color:#92adeb; color: #000000;">
+                <h3 style="text-align: center;">In Modern Culture</h3>
+                <ol>Griffins appear in:
+                    <li>Fantasy books & movies (e.g., Harry Potter, The Witcher)</li> 
+                    <li>Video games (Dungeons & Dragons)</li>
+                    <li>Logos, emblems, and fantasy art.</li>
+                </ol>
+            </div>
+            <footer>NOTE: If you change the 'div' element's display property from block to inline-block, the 'div' elements will no 
+                longer add a line break before and after, and will be displayed side by side instead of on top of each other.</footer>
+        </div>
+        
+        <br>
+        <hr style="height: 10px; background-color: #330a0a;">
+        <br>
+        <div class="design">
+            <img src="3.jpg">
+        </div>
+        
+        <!--DIV Aligning them horizontally side by side-------------------------METHOD3----->
+        <div class="box4">
+            
+            <h1>METHOD 3: Aligning DIV horizontally side by side</h1>
+            <div class="box3">
+                <div style="font-size: 25px; background-color:#deaf88; color: rgb(0, 0, 0);">
+                    <h3 style="text-align: center;">Origins & History</h3>
+                    <ul>
+                        <li>Ancient Persia & Mesopotamia: Early depictions guarding gold and treasures</li>
+                        <li>Greek mythology: Sacred to Apollo, associated with the sun and divine power</li>
+                        <li>Medieval Europe: Common in coats of arms and architecture as a symbol of protection</li>
+                    </ul>
+                </div>
+                
+                <div style="font-size: 25px; background-color:#ecb3da; color: #3d230a;">
+                    <h3 style="text-align: center;">Symbolism</h3>
+                    <p style="text-align: center;">Since the eagle is the king of the sky and the lion is the king of the land,
+                         the griffin symbolizes power over both air and earth.<br>They are often shown as guardians of gold, 
+                         temples, or royal property</p>
+                </div>
+
+                <div style="font-size: 25px; background-color:#92adeb; color: #000000;">
+                    <h3 style="text-align: center;">In Modern Culture</h3>
+                    <ol>Griffins appear in:
+                        <li>Fantasy books & movies (e.g., Harry Potter, The Witcher)</li> 
+                        <li>Video games (Dungeons & Dragons)</li>
+                        <li>Logos, emblems, and fantasy art.</li>
+                    </ol>
+                </div>
+            </div>
+            <footer>NOTE: To make the CSS flex method work, surround the 'div' elements with another 'div' element and 
+                give it the status as a flex container.</footer>
+            
+        </div>
+    </body>
+</html>
